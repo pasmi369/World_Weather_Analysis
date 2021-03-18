@@ -13,7 +13,7 @@ Maximum temperature
 Humidity
 Cloudiness
 Wind speed
-Exploratory Analysis with Visualization
+## Exploratory Analysis with Visualization
 
 Create scatter plots of the weather data for the following comparisons:
 Latitude versus temperature
@@ -32,7 +32,7 @@ Latitude and cloudiness
 Latitude and wind speed
 Visualize Travel Data
 
-Create a heatmap with pop-up markers that can display information on specific cities based on a customer's travel preferences. Complete these steps:
+## Create a heatmap with pop-up markers that can display information on specific cities based on a customer's travel preferences. Complete these steps:
 
 Filter the Pandas DataFrame based on user inputs for a minimum and maximum temperature.
 Create a heatmap for the new DataFrame.
