@@ -26,17 +26,17 @@ These different categories of information make it easy for travelers to choose e
 
 This folder takes the information gained in the weather database and uses Google Maps API to plot different travel destinations with a hotel at each location. For example, the image below shows the locations of all the places in the database that have an daily maximum temperature between 75 and 90 degrees farinheit.
 
-![vacation_search_map](./Vacation_Search/Weatherpy_vacation_map.png)
+![vacation_search_map](./Vacation_Search/WeatherPy_vacation_map.png)
 
 ### Vacation Itinerary
 
 This folder takes the search information from the Vacation Search folder and uses Google Maps directions API to create a vacation itinerary. For example, the image below shows a 4 stop itinerary in Brazil that features Cacu, Nobres, Alta Floresta and Palmas.
 
-![vacation_itinerary_map](./Vacation_Itinerary/Weatherpy_travel_map.png)
+![vacation_itinerary_map](./Vacation_Itinerary/WeatherPy_travel_map.png)
 
 Also, as with the vacation search folder, there is a hotel at each location. See below map showing Hotel Information.
 
-![vacation_itinerary_markers](./Vacation_Itinerary/Weatherpy_travel_map_markers.png)
+![vacation_itinerary_markers](./Vacation_Itinerary/WeatherPy_travel_map_markers.png)
 
 ### Bonus: Weather Data
 
