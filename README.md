@@ -1,41 +1,44 @@
-# World_Weather_AnalysisYour analysis of the data will be split into three main parts, or stages.
+# World_Weather_Analysis
+Weather Analysis and building of a travel app for customers of 500+ cities around the world.
+## Overview
 
-Collect the Data
+This analysis looks at different weather patterns around the global and offers insights to travelers who want to book a trip. There are three folders here that offer different levels of analysis: 
+- ### Weather Database
+- ### Vacation Search
+- ### Vacation Itinerary.
 
-Use the NumPy module to generate more than 1,500 random latitudes and longitudes.
-Use the citipy module to list the nearest city to the latitudes and longitudes.
-Use the OpenWeatherMap API to request the current weather data from each unique city in your list.
-Parse the JSON data from the API request.
-Collect the following data from the JSON file and add it to a DataFrame:
-City, country, and date
-Latitude and longitude
-Maximum temperature
-Humidity
-Cloudiness
-Wind speed
-## Exploratory Analysis with Visualization
 
-Create scatter plots of the weather data for the following comparisons:
-Latitude versus temperature
-Latitude versus humidity
-Latitude versus cloudiness
-Latitude versus wind speed
-Determine the correlations for the following weather data:
-Latitude and temperature
-Latitude and humidity
-Latitude and cloudiness
-Latitude and wind speed
-Create a series of heatmaps using the Google Maps and Places API that showcases the following:
-Latitude and temperature
-Latitude and humidity
-Latitude and cloudiness
-Latitude and wind speed
-Visualize Travel Data
+## Weather Database
 
-## Create a heatmap with pop-up markers that can display information on specific cities based on a customer's travel preferences. Complete these steps:
+This folder uses Open Weather Map API to pull weather information on over 716 different cities around the world. That information consists of:
 
-Filter the Pandas DataFrame based on user inputs for a minimum and maximum temperature.
-Create a heatmap for the new DataFrame.
-Find a hotel from the cities' coordinates using Google's Maps and Places API, and Search Nearby feature.
-Store the name of the first hotel in the DataFrame.
-Add pop-up markers to the heatmap that display information about the city, current maximum temperature, and a hotel in the city.
+1. ### Maximum Temperature
+2. ### Humidity
+3. ### Cloudiness
+4. ### Wind Speed
+5. ### Current Weather Description
+
+![Weather_Database](./Weather_Database/City_Data.png)
+
+These different categories of information make it easy for travelers to choose exactly what they are looking for in a travel destination.
+
+### Vacation Search
+
+This folder takes the information gained in the weather database and uses Google Maps API to plot different travel destinations with a hotel at each location. For example, the image below shows the locations of all the places in the database that have an daily maximum temperature between 75 and 90 degrees farinheit.
+
+![vacation_search_map](./Vacation_Search/Weatherpy_vacation_map.png)
+
+### Vacation Itinerary
+
+This folder takes the search information from the Vacation Search folder and uses Google Maps directions API to create a vacation itinerary. For example, the image below shows a 4 stop itinerary in Brazil that features Cacu, Nobres, Alta Floresta and Palmas.
+
+![vacation_itinerary_map](./Vacation_Itinerary/Weatherpy_travel_map.png)
+
+Also, as with the vacation search folder, there is a hotel at each location. See below map showing Hotel Information.
+
+![vacation_itinerary_markers](./Vacation_Itinerary/Weatherpy_travel_map_markers.png)
+
+### Bonus: Weather Data
+
+As an addon to these three folders, there is a weather data folder that has valuable linear regression models looking at the correlation between different weather infromation and latitude. These take into consideration the different weather information that are used in the weather database folder. 
+
